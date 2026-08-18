@@ -1,0 +1,1797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Isha 💖</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100vh;
+            overflow-x: hidden;
+
+            font-family: "Poppins", sans-serif;
+            color: white;
+
+            background:
+                radial-gradient(
+                    circle at 15% 20%,
+                    rgba(255, 105, 180, 0.35),
+                    transparent 30%
+                ),
+                radial-gradient(
+                    circle at 85% 80%,
+                    rgba(157, 78, 221, 0.35),
+                    transparent 30%
+                ),
+                linear-gradient(
+                    135deg,
+                    #120018,
+                    #27002f,
+                    #12001b
+                );
+
+            position: relative;
+        }
+
+
+        /* =====================================
+           BACKGROUND GLOW
+        ===================================== */
+
+        .background-glow {
+            position: fixed;
+
+            width: 300px;
+            height: 300px;
+
+            border-radius: 50%;
+
+            filter: blur(100px);
+
+            opacity: 0.25;
+
+            pointer-events: none;
+
+            z-index: 0;
+        }
+
+        .glow-one {
+            background: #ff4fa3;
+            top: -100px;
+            left: -100px;
+        }
+
+        .glow-two {
+            background: #9d4edd;
+            right: -100px;
+            bottom: -100px;
+        }
+
+
+        /* =====================================
+           FLOATING HEARTS
+        ===================================== */
+
+        .floating-hearts span {
+            position: fixed;
+
+            bottom: -60px;
+
+            font-size: 25px;
+
+            opacity: 0.55;
+
+            pointer-events: none;
+
+            z-index: 1;
+
+            animation: floatHeart linear infinite;
+        }
+
+        .floating-hearts span:nth-child(1) {
+            left: 5%;
+            animation-duration: 10s;
+        }
+
+        .floating-hearts span:nth-child(2) {
+            left: 18%;
+            animation-duration: 13s;
+            animation-delay: 2s;
+        }
+
+        .floating-hearts span:nth-child(3) {
+            left: 35%;
+            animation-duration: 11s;
+            animation-delay: 4s;
+        }
+
+        .floating-hearts span:nth-child(4) {
+            left: 55%;
+            animation-duration: 14s;
+            animation-delay: 1s;
+        }
+
+        .floating-hearts span:nth-child(5) {
+            left: 75%;
+            animation-duration: 12s;
+            animation-delay: 3s;
+        }
+
+        .floating-hearts span:nth-child(6) {
+            left: 90%;
+            animation-duration: 15s;
+            animation-delay: 5s;
+        }
+
+        @keyframes floatHeart {
+
+            0% {
+                transform:
+                    translateY(0)
+                    rotate(0deg);
+
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 0.6;
+            }
+
+            100% {
+                transform:
+                    translateY(-115vh)
+                    rotate(360deg);
+
+                opacity: 0;
+            }
+        }
+
+
+        /* =====================================
+           MAIN
+        ===================================== */
+
+        .container {
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 30px 15px;
+
+            position: relative;
+
+            z-index: 5;
+        }
+
+
+        /* =====================================
+           CARD
+        ===================================== */
+
+        .birthday-card {
+
+            width: min(620px, 100%);
+
+            padding: 45px 35px;
+
+            text-align: center;
+
+            border-radius: 32px;
+
+            background:
+                rgba(255, 255, 255, 0.08);
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.2);
+
+            backdrop-filter: blur(22px);
+            -webkit-backdrop-filter: blur(22px);
+
+            box-shadow:
+                0 30px 80px
+                rgba(0, 0, 0, 0.5),
+
+                inset 0 0 30px
+                rgba(255, 255, 255, 0.03);
+
+            animation:
+                cardAppear 1.2s ease;
+
+            position: relative;
+        }
+
+        @keyframes cardAppear {
+
+            from {
+                opacity: 0;
+
+                transform:
+                    translateY(50px)
+                    scale(0.92);
+            }
+
+            to {
+                opacity: 1;
+
+                transform:
+                    translateY(0)
+                    scale(1);
+            }
+        }
+
+
+        /* =====================================
+           SPARKLES
+        ===================================== */
+
+        .sparkle {
+            position: absolute;
+
+            font-size: 24px;
+
+            animation:
+                sparkle 2s infinite alternate;
+        }
+
+        .sparkle.one {
+            top: 25px;
+            left: 25px;
+        }
+
+        .sparkle.two {
+            top: 80px;
+            right: 25px;
+
+            animation-delay: 0.5s;
+        }
+
+        .sparkle.three {
+            bottom: 100px;
+            left: 25px;
+
+            animation-delay: 1s;
+        }
+
+        .sparkle.four {
+            bottom: 50px;
+            right: 30px;
+
+            animation-delay: 1.5s;
+        }
+
+        @keyframes sparkle {
+
+            from {
+                opacity: 0.25;
+
+                transform:
+                    scale(0.7)
+                    rotate(0deg);
+            }
+
+            to {
+                opacity: 1;
+
+                transform:
+                    scale(1.25)
+                    rotate(20deg);
+            }
+        }
+
+
+        /* =====================================
+           TITLE
+        ===================================== */
+
+        .small-title {
+
+            font-size: 10px;
+
+            letter-spacing: 4px;
+
+            opacity: 0.65;
+
+            margin-bottom: 15px;
+        }
+
+        h1 {
+
+            font-family:
+                "Pacifico",
+                cursive;
+
+            font-size:
+                clamp(40px, 9vw, 70px);
+
+            line-height: 1.2;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #ff8bc8,
+                    #ffffff,
+                    #ff5ca8
+                );
+
+            background-clip: text;
+
+            -webkit-background-clip: text;
+
+            -webkit-text-fill-color: transparent;
+
+            filter:
+                drop-shadow(
+                    0 0 10px
+                    rgba(255, 105, 180, 0.3)
+                );
+
+            animation:
+                titleGlow 2s infinite alternate;
+        }
+
+        h1 span {
+            display: block;
+        }
+
+        @keyframes titleGlow {
+
+            from {
+                filter:
+                    drop-shadow(
+                        0 0 5px
+                        rgba(255, 105, 180, 0.3)
+                    );
+            }
+
+            to {
+                filter:
+                    drop-shadow(
+                        0 0 25px
+                        rgba(255, 105, 180, 0.8)
+                    );
+            }
+        }
+
+
+        /* =====================================
+           CAKE
+        ===================================== */
+
+        .cake-container {
+
+            height: 235px;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            margin: 10px 0;
+        }
+
+        .cake {
+
+            width: 240px;
+            height: 170px;
+
+            position: relative;
+
+            animation:
+                cakeFloat
+                3s
+                ease-in-out
+                infinite;
+        }
+
+        @keyframes cakeFloat {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+
+        /* Cake Layers */
+
+        .bottom-layer,
+        .middle-layer,
+        .top-layer {
+
+            position: absolute;
+
+            left: 50%;
+
+            transform:
+                translateX(-50%);
+
+            border-radius: 12px;
+        }
+
+        .bottom-layer {
+
+            bottom: 10px;
+
+            width: 220px;
+            height: 65px;
+
+            background:
+                linear-gradient(
+                    to bottom,
+                    #ff91c8,
+                    #e84b9b
+                );
+
+            box-shadow:
+                0 9px 0 #ad2d76;
+        }
+
+        .middle-layer {
+
+            bottom: 65px;
+
+            width: 180px;
+            height: 55px;
+
+            background:
+                linear-gradient(
+                    to bottom,
+                    #ffc1e2,
+                    #ff70b8
+                );
+
+            box-shadow:
+                0 8px 0 #cf3989;
+        }
+
+        .top-layer {
+
+            bottom: 110px;
+
+            width: 145px;
+            height: 45px;
+
+            background:
+                linear-gradient(
+                    to bottom,
+                    #ffe0ef,
+                    #ff8ac7
+                );
+
+            box-shadow:
+                0 6px 0 #d84e98;
+        }
+
+        .bottom-layer::before,
+        .middle-layer::before,
+        .top-layer::before {
+
+            content:
+                "• • • • • • •";
+
+            position: absolute;
+
+            width: 100%;
+
+            text-align: center;
+
+            color: white;
+
+            letter-spacing: 5px;
+
+            font-size: 15px;
+        }
+
+
+        /* Candle */
+
+        .candle {
+
+            position: absolute;
+
+            width: 15px;
+            height: 58px;
+
+            left: 50%;
+
+            bottom: 150px;
+
+            transform:
+                translateX(-50%);
+
+            border-radius: 5px;
+
+            background:
+                repeating-linear-gradient(
+                    45deg,
+                    #ffffff,
+                    #ffffff 8px,
+                    #ff5ca8 8px,
+                    #ff5ca8 16px
+                );
+
+            z-index: 10;
+        }
+
+
+        /* Flame */
+
+        .flame {
+
+            position: absolute;
+
+            width: 20px;
+            height: 28px;
+
+            top: -28px;
+
+            left: 50%;
+
+            transform:
+                translateX(-50%);
+
+            background: #ffd166;
+
+            border-radius:
+                50% 50% 50% 50%;
+
+            box-shadow:
+
+                0 0 10px #ffd166,
+
+                0 0 25px #ff9f1c,
+
+                0 0 45px
+                rgba(255, 159, 28, 0.6);
+
+            animation:
+                flame
+                0.5s
+                infinite alternate;
+        }
+
+        @keyframes flame {
+
+            from {
+                transform:
+                    translateX(-50%)
+                    scale(1);
+            }
+
+            to {
+                transform:
+                    translateX(-50%)
+                    scale(1.18);
+            }
+        }
+
+
+        /* =====================================
+           TEXT
+        ===================================== */
+
+        .birthday-text {
+
+            max-width: 500px;
+
+            margin: auto;
+
+            font-size: 15px;
+
+            line-height: 1.8;
+
+            color:
+                rgba(255, 255, 255, 0.85);
+        }
+
+        .birthday-text b {
+            color: #ff91c8;
+        }
+
+
+        /* =====================================
+           GIFT BUTTON
+        ===================================== */
+
+        .gift-button {
+
+            margin-top: 28px;
+
+            padding: 16px 32px;
+
+            border: none;
+
+            border-radius: 50px;
+
+            font-family:
+                "Poppins",
+                sans-serif;
+
+            font-size: 15px;
+
+            font-weight: 700;
+
+            color: white;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #ff4fa3,
+                    #a855f7
+                );
+
+            cursor: pointer;
+
+            box-shadow:
+                0 10px 30px
+                rgba(255, 79, 163, 0.35);
+
+            transition:
+                all 0.3s ease;
+
+            animation:
+                buttonPulse
+                2s
+                infinite;
+        }
+
+        @keyframes buttonPulse {
+
+            0% {
+                box-shadow:
+                    0 0 0
+                    rgba(255, 79, 163, 0.4);
+            }
+
+            50% {
+                box-shadow:
+                    0 0 25px
+                    rgba(255, 79, 163, 0.6);
+            }
+
+            100% {
+                box-shadow:
+                    0 0 0
+                    rgba(255, 79, 163, 0.4);
+            }
+        }
+
+        .gift-button:hover {
+
+            transform:
+                translateY(-5px)
+                scale(1.04);
+        }
+
+        .gift-button:active {
+
+            transform:
+                scale(0.94);
+        }
+
+
+        /* =====================================
+           GIFT BOX
+        ===================================== */
+
+        .gift-container {
+
+            display: none;
+
+            margin-top: 30px;
+
+            animation:
+                giftAppear
+                0.8s
+                ease;
+        }
+
+        .gift-container.show {
+
+            display: block;
+        }
+
+        @keyframes giftAppear {
+
+            from {
+                opacity: 0;
+
+                transform:
+                    scale(0.5)
+                    translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+
+                transform:
+                    scale(1)
+                    translateY(0);
+            }
+        }
+
+        .gift-box {
+
+            width: 130px;
+            height: 100px;
+
+            position: relative;
+
+            margin: auto;
+        }
+
+        .gift-body {
+
+            position: absolute;
+
+            width: 110px;
+            height: 80px;
+
+            left: 10px;
+            top: 20px;
+
+            border-radius: 8px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #ff4f9a,
+                    #d63384
+                );
+
+            box-shadow:
+                0 15px 30px
+                rgba(0, 0, 0, 0.3);
+        }
+
+        .gift-lid {
+
+            position: absolute;
+
+            width: 125px;
+            height: 28px;
+
+            left: 2px;
+            top: 8px;
+
+            border-radius: 7px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #ff75b9,
+                    #e83e8c
+                );
+
+            z-index: 3;
+        }
+
+        .gift-ribbon-vertical {
+
+            position: absolute;
+
+            width: 18px;
+            height: 100px;
+
+            left: 56px;
+            top: 8px;
+
+            background: #ffd166;
+
+            z-index: 4;
+        }
+
+        .gift-ribbon-horizontal {
+
+            position: absolute;
+
+            width: 110px;
+            height: 16px;
+
+            left: 10px;
+            top: 48px;
+
+            background: #ffd166;
+
+            z-index: 5;
+        }
+
+        .bow-left,
+        .bow-right {
+
+            position: absolute;
+
+            width: 38px;
+            height: 25px;
+
+            background: #ffd166;
+
+            top: -12px;
+
+            border-radius:
+                50% 50% 20% 50%;
+
+            z-index: 6;
+        }
+
+        .bow-left {
+
+            left: 25px;
+
+            transform:
+                rotate(-25deg);
+        }
+
+        .bow-right {
+
+            right: 25px;
+
+            transform:
+                rotate(25deg);
+        }
+
+
+        /* =====================================
+           CONGRATS MESSAGE
+        ===================================== */
+
+        .congrats {
+
+            display: none;
+
+            margin-top: 30px;
+
+            animation:
+                congratsAppear
+                1s
+                ease;
+        }
+
+        .congrats.show {
+
+            display: block;
+        }
+
+        @keyframes congratsAppear {
+
+            0% {
+
+                opacity: 0;
+
+                transform:
+                    scale(0.3)
+                    rotate(-8deg);
+            }
+
+            70% {
+
+                transform:
+                    scale(1.1)
+                    rotate(2deg);
+            }
+
+            100% {
+
+                opacity: 1;
+
+                transform:
+                    scale(1)
+                    rotate(0);
+            }
+        }
+
+        .congrats .emoji {
+
+            font-size: 55px;
+
+            animation:
+                heartbeat
+                1s
+                infinite;
+        }
+
+        .congrats h2 {
+
+            margin-top: 10px;
+
+            font-family:
+                "Pacifico",
+                cursive;
+
+            font-size:
+                clamp(30px, 8vw, 48px);
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #ffd166,
+                    #ff91c8,
+                    #ffffff
+                );
+
+            background-clip: text;
+
+            -webkit-background-clip: text;
+
+            -webkit-text-fill-color: transparent;
+
+            filter:
+                drop-shadow(
+                    0 0 15px
+                    rgba(255, 105, 180, 0.7)
+                );
+        }
+
+        .congrats p {
+
+            margin-top: 10px;
+
+            font-size: 16px;
+
+            line-height: 1.7;
+
+            color:
+                rgba(255,255,255,0.9);
+        }
+
+        .congrats .romantic {
+
+            margin-top: 18px;
+
+            font-family:
+                "Pacifico",
+                cursive;
+
+            color: #ffb6dc;
+
+            font-size: 20px;
+        }
+
+
+        /* =====================================
+           HIDDEN MESSAGE
+        ===================================== */
+
+        .hidden-message {
+
+            max-height: 0;
+
+            overflow: hidden;
+
+            opacity: 0;
+
+            transition:
+                max-height 1.2s ease,
+                opacity 0.8s ease,
+                margin 0.8s ease;
+        }
+
+        .hidden-message.show {
+
+            max-height: 600px;
+
+            opacity: 1;
+
+            margin-top: 30px;
+        }
+
+        .hidden-message h2 {
+
+            font-family:
+                "Pacifico",
+                cursive;
+
+            color: #ff91c8;
+
+            font-size: 32px;
+        }
+
+        .hidden-message p {
+
+            margin-top: 15px;
+
+            line-height: 1.8;
+
+            font-size: 14px;
+
+            color:
+                rgba(255, 255, 255, 0.85);
+        }
+
+
+        /* =====================================
+           HEART
+        ===================================== */
+
+        .heart {
+
+            font-size: 48px;
+
+            animation:
+                heartbeat
+                1s
+                infinite;
+        }
+
+        @keyframes heartbeat {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.25);
+            }
+        }
+
+
+        /* =====================================
+           FOOTER
+        ===================================== */
+
+        .footer {
+
+            margin-top: 35px;
+
+            font-size: 11px;
+
+            opacity: 0.45;
+
+            letter-spacing: 1px;
+        }
+
+
+        /* =====================================
+           MUSIC STATUS
+        ===================================== */
+
+        .music-status {
+
+            margin-top: 18px;
+
+            font-size: 11px;
+
+            opacity: 0.45;
+        }
+
+
+        /* =====================================
+           MOBILE
+        ===================================== */
+
+        @media (max-width: 600px) {
+
+            .container {
+                padding: 15px;
+            }
+
+            .birthday-card {
+
+                padding:
+                    35px 20px;
+
+                border-radius: 26px;
+            }
+
+            h1 {
+                font-size: 42px;
+            }
+
+            .small-title {
+
+                font-size: 8px;
+
+                letter-spacing:
+                    2.5px;
+            }
+
+            .cake-container {
+                height: 210px;
+            }
+
+            .cake {
+                transform: scale(0.85);
+            }
+
+            .birthday-text {
+
+                font-size: 13px;
+
+                line-height: 1.8;
+            }
+
+            .gift-button {
+
+                width: 100%;
+
+                max-width: 300px;
+            }
+
+            .congrats h2 {
+
+                font-size: 34px;
+            }
+
+            .sparkle.one {
+                left: 12px;
+            }
+
+            .sparkle.two {
+                right: 12px;
+            }
+
+            .sparkle.three {
+                left: 12px;
+            }
+
+            .sparkle.four {
+                right: 12px;
+            }
+        }
+
+
+        @media (max-width: 380px) {
+
+            .birthday-card {
+                padding: 30px 15px;
+            }
+
+            h1 {
+                font-size: 35px;
+            }
+
+            .cake {
+                transform: scale(0.72);
+            }
+
+            .cake-container {
+                height: 185px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- =====================================
+         BACKGROUND
+    ===================================== -->
+
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+
+    <!-- Floating Hearts -->
+
+    <div class="floating-hearts">
+
+        <span>💖</span>
+        <span>💕</span>
+        <span>💗</span>
+        <span>💓</span>
+        <span>💝</span>
+        <span>💘</span>
+
+    </div>
+
+
+    <!-- =====================================
+         MUSIC
+    ===================================== -->
+
+    <audio
+        id="birthdayMusic"
+        loop
+        preload="auto">
+
+        <source
+            src="birthday.mp3"
+            type="audio/mpeg">
+
+    </audio>
+
+
+    <!-- =====================================
+         MAIN
+    ===================================== -->
+
+    <main class="container">
+
+        <div class="birthday-card">
+
+
+            <!-- Sparkles -->
+
+            <div class="sparkle one">
+                ✨
+            </div>
+
+            <div class="sparkle two">
+                ✨
+            </div>
+
+            <div class="sparkle three">
+                ✨
+            </div>
+
+            <div class="sparkle four">
+                ✨
+            </div>
+
+
+            <!-- =================================
+                 TITLE
+            ================================= -->
+
+            <p class="small-title">
+                A SPECIAL DAY FOR A SPECIAL PERSON
+            </p>
+
+
+            <h1>
+
+                Happy Birthday
+
+                <span>
+                    Isha! 💖
+                </span>
+
+            </h1>
+
+
+            <!-- =================================
+                 CAKE
+            ================================= -->
+
+            <div class="cake-container">
+
+                <div class="cake">
+
+                    <div class="candle">
+
+                        <div class="flame"></div>
+
+                    </div>
+
+                    <div class="top-layer"></div>
+
+                    <div class="middle-layer"></div>
+
+                    <div class="bottom-layer"></div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================
+                 MESSAGE
+            ================================= -->
+
+            <p class="birthday-text">
+
+                Today is all about celebrating
+                <b>YOU</b> —
+
+                your smile, your kindness,
+                your beautiful heart,
+                and all the happiness you bring
+                into the lives around you. 💕
+
+            </p>
+
+
+            <!-- =================================
+                 GIFT BUTTON
+            ================================= -->
+
+            <button
+                id="giftButton"
+                class="gift-button">
+
+                🎁 Click For Your Gift
+
+            </button>
+
+
+            <!-- =================================
+                 GIFT
+            ================================= -->
+
+            <div
+                id="giftContainer"
+                class="gift-container">
+
+                <div class="gift-box">
+
+                    <div class="gift-body"></div>
+
+                    <div class="gift-ribbon-vertical"></div>
+
+                    <div class="gift-ribbon-horizontal"></div>
+
+                    <div class="gift-lid"></div>
+
+                    <div class="bow-left"></div>
+
+                    <div class="bow-right"></div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================
+                 CONGRATULATIONS
+            ================================= -->
+
+            <div
+                id="congrats"
+                class="congrats">
+
+                <div class="emoji">
+                    🎉
+                </div>
+
+                <h2>
+                    CONGRATS!
+                </h2>
+
+                <p>
+                    You got the best gift ever... 😌
+                </p>
+
+                <p class="romantic">
+                    You got me. ❤️
+                </p>
+
+            </div>
+
+
+            <!-- =================================
+                 EXTRA MESSAGE
+            ================================= -->
+
+            <div
+                id="message"
+                class="hidden-message">
+
+                <div class="heart">
+                    💖
+                </div>
+
+                <h2>
+                    Dear Isha...
+                </h2>
+
+                <p>
+
+                    May your birthday be filled
+                    with endless smiles,
+                    beautiful memories,
+                    unexpected happiness,
+                    and everything your heart
+                    wishes for. ✨
+
+                </p>
+
+                <p>
+
+                    Keep smiling,
+                    keep shining,
+                    and never stop being
+                    the wonderful person you are. 🌸
+
+                </p>
+
+                <p>
+
+                    I hope this little surprise
+                    makes your special day
+                    a little more special. ❤️
+
+                </p>
+
+                <h3>
+
+                    Happy Birthday, Isha! 🎂💕
+
+                </h3>
+
+            </div>
+
+
+            <!-- Music Status -->
+
+            <p
+                id="musicStatus"
+                class="music-status">
+
+                🎵 Birthday music is getting ready...
+
+            </p>
+
+
+            <!-- Footer -->
+
+            <div class="footer">
+
+                Made with ❤️ just for you
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+    <!-- =====================================
+         CONFETTI
+    ===================================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+
+    <script>
+
+
+        /* =====================================
+           ELEMENTS
+        ===================================== */
+
+        const giftButton =
+            document.getElementById(
+                "giftButton"
+            );
+
+        const giftContainer =
+            document.getElementById(
+                "giftContainer"
+            );
+
+        const congrats =
+            document.getElementById(
+                "congrats"
+            );
+
+        const message =
+            document.getElementById(
+                "message"
+            );
+
+        const music =
+            document.getElementById(
+                "birthdayMusic"
+            );
+
+        const musicStatus =
+            document.getElementById(
+                "musicStatus"
+            );
+
+
+        let musicStarted = false;
+
+        let giftOpened = false;
+
+
+        /* =====================================
+           MUSIC
+        ===================================== */
+
+        function startMusic() {
+
+            if (musicStarted) {
+                return;
+            }
+
+            music.volume = 0.6;
+
+            music.play()
+
+                .then(() => {
+
+                    musicStarted = true;
+
+                    musicStatus.innerHTML =
+                        "🎵 Birthday music is playing... 💖";
+
+                })
+
+                .catch(() => {
+
+                    musicStatus.innerHTML =
+                        "🎵 Tap anywhere to start the music";
+
+                });
+        }
+
+
+        /* Try autoplay */
+
+        window.addEventListener(
+            "load",
+            () => {
+
+                startMusic();
+
+            }
+        );
+
+
+        /* Browser fallback */
+
+        document.addEventListener(
+            "click",
+            startMusic,
+            { once: true }
+        );
+
+        document.addEventListener(
+            "touchstart",
+            startMusic,
+            { once: true }
+        );
+
+        document.addEventListener(
+            "keydown",
+            startMusic,
+            { once: true }
+        );
+
+
+        /* =====================================
+           OPEN GIFT
+        ===================================== */
+
+        giftButton.addEventListener(
+            "click",
+            () => {
+
+                if (giftOpened) {
+                    return;
+                }
+
+                giftOpened = true;
+
+                startMusic();
+
+
+                /* Change button */
+
+                giftButton.innerHTML =
+                    "🎉 Gift Opened!";
+
+
+                giftButton.style.animation =
+                    "none";
+
+
+                /* Show Gift */
+
+                giftContainer.classList.add(
+                    "show"
+                );
+
+
+                /* Show Congrats */
+
+                setTimeout(() => {
+
+                    congrats.classList.add(
+                        "show"
+                    );
+
+                }, 700);
+
+
+                /* Show Extra Message */
+
+                setTimeout(() => {
+
+                    message.classList.add(
+                        "show"
+                    );
+
+                }, 1400);
+
+
+                /* =================================
+                   MASSIVE CONFETTI
+                ================================= */
+
+                confetti({
+
+                    particleCount: 300,
+
+                    spread: 150,
+
+                    startVelocity: 50,
+
+                    gravity: 0.8,
+
+                    origin: {
+                        x: 0.5,
+                        y: 0.6
+                    }
+
+                });
+
+
+                /* Left explosion */
+
+                setTimeout(() => {
+
+                    confetti({
+
+                        particleCount: 150,
+
+                        angle: 60,
+
+                        spread: 80,
+
+                        startVelocity: 45,
+
+                        origin: {
+                            x: 0,
+                            y: 0.7
+                        }
+
+                    });
+
+                }, 200);
+
+
+                /* Right explosion */
+
+                setTimeout(() => {
+
+                    confetti({
+
+                        particleCount: 150,
+
+                        angle: 120,
+
+                        spread: 80,
+
+                        startVelocity: 45,
+
+                        origin: {
+                            x: 1,
+                            y: 0.7
+                        }
+
+                    });
+
+                }, 400);
+
+
+                /* Extra celebration */
+
+                setTimeout(() => {
+
+                    confetti({
+
+                        particleCount: 250,
+
+                        spread: 180,
+
+                        startVelocity: 40,
+
+                        gravity: 0.7,
+
+                        origin: {
+                            x: 0.5,
+                            y: 0.4
+                        }
+
+                    });
+
+                }, 900);
+
+
+                /* Final burst */
+
+                setTimeout(() => {
+
+                    confetti({
+
+                        particleCount: 200,
+
+                        spread: 120,
+
+                        origin: {
+                            x: 0.5,
+                            y: 0.2
+                        }
+
+                    });
+
+                }, 1500);
+
+            }
+        );
+
+
+        /* =====================================
+           RANDOM MINI CONFETTI
+        ===================================== */
+
+        function miniConfetti() {
+
+            confetti({
+
+                particleCount: 25,
+
+                spread: 60,
+
+                startVelocity: 25,
+
+                gravity: 1,
+
+                origin: {
+
+                    x: Math.random(),
+
+                    y: 0
+
+                }
+
+            });
+
+        }
+
+
+        setInterval(() => {
+
+            if (
+                Math.random() > 0.45
+                && !giftOpened
+            ) {
+
+                miniConfetti();
+
+            }
+
+        }, 7000);
+
+
+    </script>
+
+</body>
+
+</html>
